@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dr. Atul Kumar | Computer Science</title>
+<meta name="description" content="Professional academic website of Dr. Atul Kumar, Assistant Professor of Computer Science.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="hero">
+  <nav class="nav container">
+    <a class="logo" href="#home">Dr. Atul Kumar</a>
+    <button class="menu" onclick="toggleMenu()">☰</button>
+    <div id="navlinks" class="navlinks">
+      <a href="#home">Home</a><a href="#about">About</a><a href="#research">Research</a>
+      <a href="#publications">Publications</a><a href="#teaching">Teaching</a><a href="#contact">Contact</a>
+    </div>
+  </nav>
+  <div id="home" class="hero-content container">
+    <div>
+      <p class="tag">ACADEMIC • RESEARCHER • EDUCATOR</p>
+      <h1>Dr. Atul Kumar</h1>
+      <h2>Assistant Professor of Computer Science</h2>
+      <p>R.G.M. Govt. College, Joginder Nagar, Himachal Pradesh</p>
+      <div class="buttons">
+        <a class="btn primary" href="#research">Explore Research</a>
+        <a class="btn outline" href="cv.pdf" download>Download CV</a>
+      </div>
+    </div>
+    <div class="profile-card">
+      <div class="profile-placeholder">AK</div>
+      <p>Computer Science</p>
+      <small>OCR • AI • Computer Vision</small>
+    </div>
+  </div>
+</header>
+
+<main>
+<section id="about" class="section">
+<div class="container">
+  <p class="eyebrow">ABOUT</p><h2>Academic Profile</h2>
+  <div class="grid two">
+    <div>
+      <p>I am an Assistant Professor of Computer Science with more than a decade of teaching and research experience. My academic interests include artificial intelligence, machine learning, computer vision, OCR and document image analysis.</p>
+      <p>My research work focuses particularly on the digitization and recognition of Indian-language documents, including Punjabi newspapers and Gurmukhi-script content.</p>
+    </div>
+    <div class="info-box">
+      <p><strong>Qualification</strong><br>MCA • M.Tech • Ph.D. in Computer Science</p>
+      <p><strong>Institution</strong><br>R.G.M. Govt. College, Joginder Nagar</p>
+      <p><strong>Research Areas</strong><br>OCR, DLA, AI, ML, Computer Vision</p>
+    </div>
+  </div>
+</div>
+</section>
+
+<section id="research" class="section alt">
+<div class="container">
+  <p class="eyebrow">RESEARCH</p><h2>Research Interests</h2>
+  <div class="cards">
+    <article><span>01</span><h3>OCR & Document Analysis</h3><p>Optical character recognition, document layout analysis and text detection in complex document images.</p></article>
+    <article><span>02</span><h3>Indian Language Computing</h3><p>Recognition and digitization of Punjabi/Gurmukhi documents and regional-language newspaper archives.</p></article>
+    <article><span>03</span><h3>Computer Vision</h3><p>Deep-learning approaches for document understanding, object detection and visual information extraction.</p></article>
+    <article><span>04</span><h3>Artificial Intelligence</h3><p>Applications of machine learning and generative AI in education, governance and knowledge systems.</p></article>
+  </div>
+</div>
+</section>
+
+<section id="publications" class="section">
+<div class="container">
+  <p class="eyebrow">SCHOLARLY WORK</p><h2>Publications & Contributions</h2>
+  <div class="timeline">
+    <div><b>Research Papers</b><p>Published research papers in international journals and presented research at national and international conferences.</p></div>
+    <div><b>Book Chapters</b><p>Contributed chapters on AI, NLP, computer vision, document layout analysis and emerging technologies.</p></div>
+    <div><b>Review & Editorial Work</b><p>Reviewer for international conferences and journals, with editorial contribution to an international journal.</p></div>
+  </div>
+  <a class="text-link" href="publications.html">View Publications →</a>
+</div>
+</section>
+
+<section id="teaching" class="section alt">
+<div class="container">
+  <p class="eyebrow">TEACHING</p><h2>Teaching Areas</h2>
+  <div class="chips">
+    <span>Computer Networks</span><span>Python Programming</span><span>Office Automation</span>
+    <span>Web Development</span><span>HTML & CSS</span><span>PHP</span><span>Node.js</span>
+    <span>React</span><span>MongoDB</span><span>Machine Learning</span>
+  </div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+  <p class="eyebrow">PROJECTS</p><h2>Selected Research Projects</h2>
+  <div class="project">
+    <div><h3>Punjabi Newspaper Recognition System</h3><p>Deep-learning based layout detection and OCR pipeline for extracting structured information from Punjabi newspaper pages.</p></div>
+    <div><h3>Document Layout Analysis</h3><p>Research on detecting headlines, text blocks, photographs, advertisements and other layout elements.</p></div>
+    <div><h3>Indian Knowledge Systems & Digital Transformation</h3><p>Exploring AI and digital technologies for preservation, access and dissemination of indigenous knowledge.</p></div>
+  </div>
+</div>
+</section>
+
+<section id="contact" class="section contact">
+<div class="container">
+  <p class="eyebrow">CONTACT</p><h2>Let's Connect</h2>
+  <p>For academic collaboration, research discussion and professional communication.</p>
+  <div class="contact-grid">
+    <div><b>Institution</b><br>R.G.M. Govt. College, Joginder Nagar<br>District Mandi, Himachal Pradesh</div>
+    <div><b>Email</b><br><a href="mailto:your-email@example.com">your-email@example.com</a></div>
+  </div>
+</div>
+</section>
+</main>
+
+<footer><div class="container">© <span id="year"></span> Dr. Atul Kumar. All rights reserved.</div></footer>
+<script>
+function toggleMenu(){document.getElementById('navlinks').classList.toggle('show')}
+document.getElementById('year').textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
